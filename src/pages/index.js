@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import FancyParagraph from "../components/fancy-paragraph"
+
 
 const IndexPage = () => (
   <Layout>
@@ -14,8 +16,13 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
+    <Link to="/about/">About</Link> <br />
     <Link to="/page-2/">Go to page 2</Link> <br />
+    <Link to="/contact/">Contact</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <div>
+    <FancyParagraph paragraphText="C'est sympa comme endroit" />
+    </div>
   </Layout>
 )
 
